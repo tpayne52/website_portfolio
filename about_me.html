@@ -5,32 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>About Me</title>
 </head>
 <body>
-    <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <nav>
-            <ul>
-                <li><a href = "index.html" aria-label="Go to Home Page">Home</a></li>
-                <li><a href = "about_me.html" aria-label="RLearn more about Tommie Payne">About Me</a></li>
-                <li><a href = "projects.html" aria-label="Read more about what Projects Tommie has done">Projects</a></li>
-                <li><a href = "resume.html" aria-label="Read Tommie's Resume">Resume</a></li>
+            <ul class="nav_links">
+                <li class="nav_item"><a href = "index.html" aria-label="Go to Home Page">Home</a></li>
+                <li class="nav_item"><a href = "about_me.html" aria-label="RLearn more about Tommie Payne">About Me</a></li>
+                <li class="nav_item"><a href = "projects.html" aria-label="Read more about what Projects Tommie has done">Projects</a></li>
+                <li class="nav_item"><a href = "resume.html" aria-label="Read Tommie's Resume">Resume</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id = "main">
-        <h1>about me</h1>
-        <img src="images/5k_run.jpg" alt="tommie running in Big House 5k">
-        <img src="images/cabin.jpg" alt="northern lights over cabin">
-        <img src="images/chess_board.jpg" alt="stock image of chess board">
-        <img src="images/ice_climb.jpg" alt="tommie ice climbing on ice wall">
-        <img src="images/snowboard_stand.jpg" alt="tommie posing on snowboard">
-        <img src="images/tommie_snowboarding.jpg" alt="tommie snowboarding down a mountain">
-        <img src="images/bowling.jpg" alt="stock image of bowling ball and alley">
-        <img src="images/Winston.jpg" alt="picture of my dog winston with daisies">
-        <img src="images/Zeus.jpg" alt="picture of my cat zeus">
+    <h1>About me</h1>
+    <main class="container" id = "main">
+        <div class="first">
+            <img src="images/5k_run.jpg" alt="tommie running in Big House 5k">
+            <img src="images/cabin.jpg" alt="northern lights over cabin">
+            <img src="images/chess_board.jpg" alt="stock image of chess board">
+        </div>
+        <div class="second">
+            <img src="images/ice_climb.jpg" alt="tommie ice climbing on ice wall">
+            <img src="images/snowboard_stand.jpg" alt="tommie posing on snowboard">
+            <img src="images/tommie_snowboarding.jpg" alt="tommie snowboarding down a mountain">
+        </div>
+        <div class="third">
+            <img src="images/bowling.jpg" alt="stock image of bowling ball and alley">
+            <img src="images/Winston.jpg" alt="picture of my dog winston with daisies">
+            <img src="images/Zeus.jpg" alt="picture of my cat zeus">
+        </div>
     </main>
 </body>
 </html>
