@@ -6,38 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about_me.css">
     <title>About Me</title>
+    <link rel="icon" type="image/x-icon" href="/images/volcano.png">
 </head>
 <body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <header>
-        <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <nav>
+            <img src="images/home_button.png" id="home" alt="home button">
             <ul class="nav_links">
                 <li class="nav_item"><a href = "index.html" aria-label="Go to Home Page">Home</a></li>
-                <li class="nav_item"><a href = "about_me.html" aria-label="RLearn more about Tommie Payne">About Me</a></li>
-                <li class="nav_item"><a href = "projects.html" aria-label="Read more about what Projects Tommie has done">Projects</a></li>
+                <li class="nav_item" id="current"><a href = "about_me.html" aria-label="Learn more about Tommie Payne">About Me</a></li>
                 <li class="nav_item"><a href = "resume.html" aria-label="Read Tommie's Resume">Resume</a></li>
             </ul>
         </nav>
     </header>
 
-    <h1>About me</h1>
-    <main class="container" id = "main">
-        <div class="first">
-            <img src="images/5k_run.jpg" alt="tommie running in Big House 5k">
-            <img src="images/cabin.jpg" alt="northern lights over cabin">
-            <img src="images/chess_board.jpg" alt="stock image of chess board">
+    <main id="main">
+        <div class="about">
+            <h1>About Me!</h1>
+            <p>Hi! My name is Thomas Payne but most people call me Tommie. I'm currently a 
+                sophomore at the University of Michigan pursuing a degree in computer science with 
+                an interest in software engineering. I grew up in Grand Rapids Michigan which is home to the 
+                famous blue bridge and mejier gardens. If you would like to know more about my pets or recent adventures
+                then scroll down for more!</p>
         </div>
-        <div class="second">
-            <img src="images/ice_climb.jpg" alt="tommie ice climbing on ice wall">
-            <img src="images/snowboard_stand.jpg" alt="tommie posing on snowboard">
+        <div class="pets">
+            <div class="content">
+                <h2>Pets!</h2>
+                <p>I have two pets! One dog and one cat. Winston is the english bulldog sniffing the daisies and Zeus is 
+                    the tuexdo cat resting on a bundle of blankets.
+                </p>
+            </div>
+            <img src="images/Winston.jpg" alt="an english bulldog sniffing the daisies">
+            <img src="images/Zeus.jpg" alt="a tuxedo cat relaxing on the couch">
+        </div>
+        <div class="akbox">
+            <h3>Alaska Trip!</h3>
+            <p>This springbreak I visited Alaska for the first time ever! I had many fun experiences including ice climbing, snow boarding,
+                cross country skiing, hiking, and watching the breathtaking auroras. It was a very fun trip and I hope I get the 
+                opportunity to go back again!  
+            </p>
+        </div>
+        <div class="container">
+            <img src="images/chairlift.jpg" alt="tommie with a ski helmet on a chairlift">
+            <img src="images/cabin.jpg" alt="cabin under the auroras">
+            <img src="images/snowboard_stand.jpg" alt="tommie standing on a snowboard on a mountain">
+            <img src="images/tommie_stumble.jpg" alt="tommie stumbles in snow">
+            <img src="images/tommie_on_ice.jpg" alt="tommie kneeling on a frozen lake">
             <img src="images/tommie_snowboarding.jpg" alt="tommie snowboarding down a mountain">
+            <img src="images/ice_climb.jpg" alt="tommie ice climbing">
+            <img src="images/tommie_in_mountains.jpg" id="hidden" alt="tommie is looking around the mountain range">
         </div>
-        <div class="third">
-            <img src="images/bowling.jpg" alt="stock image of bowling ball and alley">
-            <img src="images/Winston.jpg" alt="picture of my dog winston with daisies">
-            <img src="images/Zeus.jpg" alt="picture of my cat zeus">
-        </div>
+        
     </main>
+    <footer>
+        <p>See what I'm up to!</p>
+        <img src="images/github_icon.png" id="git" alt="my github link">
+        <p><a href = "https://github.com/tpayne52" aria-label="Go to Tommie's github page">Github</a></p>
+        <img src="images/linkin_icon.png" id="linkedin" alt="my linkedin">
+        <p><a href = "https://www.linkedin.com/in/thomas-b-payne/" aria-label="Go to Tommie's linkedin page">Linkedin</a></p>
+    </footer>
 </body>
+<script src="js/main.js"></script>
 </html>

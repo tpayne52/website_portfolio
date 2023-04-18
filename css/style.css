@@ -1,32 +1,187 @@
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#hidden {
+    display: none;
 }
 
+li a:visited {
+    color: #2E5339;
+}
+
+li a:hover, li a:focus {
+    color: #FF5666;
+}   
+
+.skip a{
+    position: absolute;
+    left: -200px;
+    top: 20px;
+    color: white;                   
+    background: #495F41;
+    border: #2E5339 solid 3px;
+    padding: 5px;   
+    transition: left 1s, color 1s;                            
+}                   
+
+.skip a:focus {
+    position: absolute;
+    left: 20px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+#current a:link {
+    text-decoration: underline;
+}
+
+
+header {
+    background-color: aqua;
+}
+
+nav img {
+    width: 5%;
+    height: auto;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    font-family: monospace, Times, serif;
+    font-size: 3vw;
+    padding: 1rem;
+}
 .nav_links {
     display: flex;
-    flex-direction: row;
 }
 
-.nav_item {
-    padding-left: 10px;
+footer > img {
+    width: 5%;
+    height: 5%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: aqua;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 15px;
-    column-gap: 15px;
+    grid-template-columns: 1fr;
+    align-items: center;
     justify-items: center;
-    align-items: baseline;
+    row-gap: 50px;
 }
 
-.first > img, .second > img, .third > img {
-    display: grid;
-    grid-column: 1 / -1;
-    max-height: 300px;
-    max-width: 300px;
-    overflow: hidden;
+.photos {
+    width: 30%;
+    height: auto; 
 }
+
+.last {
+    width: 30%;
+    height: auto; 
+    border-width: 5px;
+    border-color: #FF5666;
+    border-style: solid;
+}
+
+main {
+    background-color: #FFCCC9;
+}
+
+h1 {
+    font-family: monospace, Times, serif;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 3.5vw;
+}
+
+p, h2, h3, h4, h5 {
+    font-family: monospace, Times, serif;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+footer > p {
+    font-size: 2vw;
+    padding: 0px 1rem 0px 0px
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    .skip a{
+      transition: none;  
+    }
+  }
+
+@media screen and (min-width: 701px) {
+
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 100px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .photos {
+        width: 75%;
+        height: auto; 
+    }
+
+    .last {
+        width: 75%;
+        height: auto; 
+    }
+
+    main > div, main > p {
+        grid-column: 1 / span 2;
+    }
+
+    #chess {
+        grid-column: 1;
+    }
+    
+    #length {
+        grid-column: 1 / span 3;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    #hidden {
+        display: inline;
+    }
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 100px;
+    }
+    nav {
+        flex-direction: column;
+    }
+
+    #tommie ~ p, main > div {
+        grid-column: 2 / span 2;
+    }
+
+    #chess {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #soccer {
+        grid-column: 2 / span 2;
+    }
+
+}
+
+
+
 
