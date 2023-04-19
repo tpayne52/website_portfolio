@@ -1,4 +1,4 @@
-#hiddenOne, #hiddenTwo, #hiddenThree {
+#hiddenone, #hiddentwo, #hiddenthree {
     display: none;
 }
 
@@ -122,6 +122,9 @@ footer > p {
   }
 
 @media screen and (min-width: 701px) {
+    #hiddenone, #hiddentwo, #hiddenthree {
+        display: none;
+    }
 
     .container {
         grid-template-columns: 1fr 1fr 1fr;
@@ -156,7 +159,7 @@ footer > p {
 }
 
 @media screen and (min-width: 1281px) {
-    #hiddenOne, #hiddenTwo, #hiddenThree {
+    #hiddenone, #hiddentwo, #hiddenthree {
         display: inline;
     }
     .container {
