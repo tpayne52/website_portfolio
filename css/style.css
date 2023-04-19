@@ -1,4 +1,4 @@
-#hidden {
+#hiddenOne, #hiddenTwo, #hiddenThree {
     display: none;
 }
 
@@ -156,7 +156,7 @@ footer > p {
 }
 
 @media screen and (min-width: 1281px) {
-    #hidden {
+    #hiddenOne, #hiddenTwo, #hiddenThree {
         display: inline;
     }
     .container {
