@@ -20,7 +20,7 @@ div > img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("/images/daisies-background.jpg");
+    background-image: url('../images/daisies-background.jpg');
 }
 
 .content {
@@ -33,7 +33,7 @@ div > img {
     grid-template-columns: 1fr;
     row-gap: 0px;
     align-items: stretch;
-    background-image: url("/images/winter.jpg");
+    background-image: url('../images/winter.jpg');
 }
 
 .container > img {
